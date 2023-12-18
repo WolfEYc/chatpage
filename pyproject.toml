@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "chatpage"
+version = "0.1.0"
+description = "chat with a webpage using GPT"
+authors = ["Isaac Wolf"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "api" }]
+
+[tool.poetry.dependencies]
+python = "3.12"
+langchain = "^0.0.350"
+openai = "^1.5.0"
+httpx = "^0.25.2"
+lxml = "^4.9.3"
+bs4 = "^0.0.1"
+tiktoken = "^0.5.2"
+qdrant-client = "^1.7.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.27.1"
+python-dotenv = "^1.0.0"
+nest-asyncio = "^1.5.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
